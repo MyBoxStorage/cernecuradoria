@@ -1,0 +1,23 @@
+.final-cta {
+  background: var(--cerne-charcoal);
+  padding: var(--space-10) 48px;
+}
+
+.final-cta__inner {
+  max-width: 560px;
+}
+
+.final-cta__text {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-presenca-secondary);
+  margin: 0 0 var(--space-7);
+}
+
+@media (max-width: 768px) {
+  .final-cta {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+}

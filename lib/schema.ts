@@ -67,3 +67,37 @@ export function serviceSchema() {
     serviceType: "Curadoria de espólio",
   };
 }
+
+export function faqPageSchema(
+  items: readonly { question: string; answer: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+export function breadcrumbListSchema(
+  crumbs: readonly { name: string; path: string }[],
+) {
+  const base = getSiteUrl();
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: `${base}${crumb.path === "/" ? "" : crumb.path}`,
+    })),
+  };
+}

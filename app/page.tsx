@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FinalCta } from "@/components/FinalCta";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ButtonLink } from "@/components/ui/Button";
 import {
@@ -144,18 +145,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. CTA final */}
-      <section className="home-cta">
-        <div className="home-cta__inner">
-          <p className="home-cta__text">
-            Uma avaliação inicial não tem custo nem compromisso. É uma conversa
-            para entender a situação da família e explicar como o processo
-            funciona.
-          </p>
-          <ButtonLink href="/contato" size="lg" onDark>
-            Solicitar avaliação gratuita
-          </ButtonLink>
-        </div>
-      </section>
+      <FinalCta />
     </>
   );
 }
