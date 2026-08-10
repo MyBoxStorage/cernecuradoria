@@ -78,6 +78,16 @@
   --fv-text: "opsz" 12, "wght" 400;
   --fv-condensed: "opsz" 10, "wght" 500;
 
+  /* Tamanho fluido para o numeral grande do "Como Funciona" — nunca menor que 56px (mobile),
+     nunca maior que 144px (desktop grande). Usa rem+vw (não vw puro) por acessibilidade: vw puro
+     não responde ao zoom do navegador e viola WCAG 1.4.4 (Resize Text). */
+  --fs-numeral: clamp(3.5rem, 2.5rem + 5vw, 9rem);
+
+  /* Eixo variável da Fraunces no topo do intervalo óptico da fonte (9–144), para o numeral expressar
+     ao máximo a personalidade de display nesse tamanho. Mesmo peso do H1 (560), só o eixo óptico
+     muda. */
+  --fv-numeral: "opsz" 144, "wght" 560;
+
   /* Spacing */
   --space-1: 4px;
   --space-2: 8px;

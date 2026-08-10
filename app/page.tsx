@@ -136,11 +136,13 @@ export default function HomePage() {
       <section className="home-section home-section--tight">
         <div className="home-section__inner">
           <SectionLabel>Origem</SectionLabel>
-          <p className="home-origin__text">
+          <blockquote className="origem-quote">
+            O mesmo cuidado que avalia uma pintura acadêmica hoje se estende ao
+            restante da casa.
+          </blockquote>
+          <p className="home-origin__support">
             A Cerne nasce da experiência de curadoria de arte e antiguidades de
-            uma galeria carioca com décadas de atuação no Rio de Janeiro. O mesmo
-            cuidado que avalia uma pintura acadêmica hoje se estende ao restante
-            da casa.
+            uma galeria carioca com décadas de atuação no Rio de Janeiro.
           </p>
           <Link href="/sobre" className="home-text-link">
             Conhecer a história →

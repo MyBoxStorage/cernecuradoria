@@ -16,7 +16,7 @@
 
 .home-section__title {
   font-family: var(--font-display), serif;
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h1);
   font-variation-settings: var(--fv-display);
   font-weight: 500;
   line-height: var(--lh-tight);
@@ -132,11 +132,13 @@
 
 .home-steps__number {
   display: block;
-  font-family: var(--font-sans), sans-serif;
-  font-size: var(--fs-small);
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  color: var(--text-operacao-muted);
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-numeral);
+  font-variation-settings: var(--fv-numeral);
+  font-weight: 560;
+  letter-spacing: 0;
+  color: var(--cerne-charcoal);
+  line-height: 1;
   margin-bottom: var(--space-3);
 }
 
@@ -194,13 +196,24 @@
   border-bottom: none;
 }
 
-/* 4. Origem */
-.home-origin__text {
+/* 4. Origem — pull-quote único da Home */
+.origem-quote {
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-display);
+  font-variation-settings: var(--fv-display);
+  font-weight: 560;
+  color: var(--cerne-charcoal);
+  max-width: 20ch;
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--space-5);
+}
+
+.home-origin__support {
   font-family: var(--font-sans), sans-serif;
-  font-size: var(--fs-body-lg);
+  font-size: var(--fs-body);
   line-height: var(--lh-relaxed);
   color: var(--text-operacao-secondary);
-  max-width: 40rem;
+  max-width: 36rem;
   margin: 0;
 }
 
@@ -223,6 +236,11 @@
   }
 
   .home-hero__title {
+    font-size: var(--fs-h1);
+    max-width: none;
+  }
+
+  .origem-quote {
     font-size: var(--fs-h1);
     max-width: none;
   }
