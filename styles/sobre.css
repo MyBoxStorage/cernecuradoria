@@ -1,0 +1,134 @@
+/* Página Sobre */
+
+.sobre-hero {
+  padding: var(--space-9) 48px var(--space-8);
+}
+
+.sobre-hero__inner {
+  max-width: 720px;
+}
+
+.sobre-hero__eyebrow {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-overline);
+  font-weight: 500;
+  letter-spacing: var(--tracking-overline);
+  text-transform: uppercase;
+  color: var(--cerne-bronze);
+  margin: 0 0 var(--space-4);
+}
+
+.sobre-hero__title {
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-h1);
+  font-variation-settings: var(--fv-display);
+  font-weight: 560;
+  line-height: var(--lh-tight);
+  color: var(--cerne-charcoal);
+  margin: 0 0 var(--space-5);
+  max-width: 16ch;
+}
+
+.sobre-hero__lead {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body-lg);
+  font-variation-settings: var(--fv-text);
+  line-height: var(--lh-relaxed);
+  color: var(--text-operacao-secondary);
+  margin: 0;
+  max-width: 42rem;
+}
+
+.sobre-founder {
+  padding: var(--space-9) 48px;
+}
+
+.sobre-founder__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+}
+
+/*
+  TODO: substituir por foto real do Pedro Henrique antes do lançamento.
+  Tratamento sugerido na foto final (não implementar filtro agora): preto e branco
+  ou dessaturada, para conversar com o resto do site tipográfico sem cor “solta”.
+*/
+.sobre-founder__photo {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  background: var(--cerne-charcoal);
+  border-radius: var(--radius-md);
+}
+
+.sobre-founder__name {
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-h3);
+  font-variation-settings: var(--fv-deck);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  color: var(--cerne-charcoal);
+  margin: 0 0 var(--space-2);
+}
+
+.sobre-founder__role {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-operacao-muted);
+  margin: 0 0 var(--space-5);
+}
+
+.sobre-founder__bio,
+.sobre-prose p {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--text-operacao-secondary);
+  margin: 0;
+  max-width: 40rem;
+}
+
+.sobre-prose {
+  padding: 0 48px var(--space-9);
+}
+
+.sobre-prose__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.sobre-prose--closing {
+  padding-bottom: var(--space-10);
+}
+
+@media (max-width: 768px) {
+  .sobre-hero,
+  .sobre-founder,
+  .sobre-prose {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .sobre-hero__title {
+    font-size: var(--fs-h2);
+    max-width: none;
+  }
+
+  .sobre-founder__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .sobre-founder__photo {
+    max-width: 240px;
+  }
+}

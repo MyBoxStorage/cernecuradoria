@@ -44,6 +44,14 @@ export const NEIGHBORHOODS_BARRA = [
 export const FOUNDER = {
   name: "Pedro Henrique",
   jobTitle: "Fundador e Curador",
+  /** Resumo para schema Person — não é copy de página. */
+  description:
+    "Fundador e curador da Cerne Curadoria; antes atuou no mercado financeiro com curadoria de projetos emergentes para investimento.",
+  /**
+   * Perfis públicos (LinkedIn etc.) — vazio até existirem.
+   * Quando houver URL, adicionar só aqui; Organization e Person schema reutilizam.
+   */
+  sameAs: [] as readonly string[],
 } as const;
 
 export const NAV_LINKS = [

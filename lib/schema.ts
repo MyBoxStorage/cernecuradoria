@@ -28,7 +28,7 @@ export function organizationSchema() {
       name: FOUNDER.name,
       jobTitle: FOUNDER.jobTitle,
     },
-    // Preencher depois com Instagram e LinkedIn reais
+    // Preencher depois com Instagram e LinkedIn reais (ver FOUNDER.sameAs / redes da empresa)
     sameAs: [] as string[],
   };
 }
@@ -99,5 +99,21 @@ export function breadcrumbListSchema(
       name: crumb.name,
       item: `${base}${crumb.path === "/" ? "" : crumb.path}`,
     })),
+  };
+}
+
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: FOUNDER.name,
+    jobTitle: FOUNDER.jobTitle,
+    worksFor: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: getSiteUrl(),
+    },
+    description: FOUNDER.description,
+    sameAs: [...FOUNDER.sameAs],
   };
 }
