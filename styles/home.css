@@ -197,13 +197,18 @@
 }
 
 .area-list-item .leader {
+  position: relative; /* necessário para o ::after absoluto funcionar */
   flex: 1;
   overflow: hidden;
   margin-inline: 0.5ch;
   min-width: 1ch;
+  height: 1.2em; /* mesma altura da linha de texto, evita a caixa esticar */
 }
 
 .area-list-item .leader::after {
+  position: absolute;
+  inset: 0;
+  white-space: nowrap; /* impede a quebra de linha que causou o bug */
   content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
   color: var(--cerne-bronze);
   letter-spacing: 0.15em;
