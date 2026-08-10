@@ -1,0 +1,2 @@
+# Pasta de posts MDX — cada arquivo [slug].mdx vira /blog/[slug].
+# Frontmatter obrigatório: title, description, date (ISO), author.

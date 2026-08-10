@@ -124,3 +124,45 @@ export function personSchema() {
     sameAs: [...FOUNDER.sameAs],
   };
 }
+
+export function blogPostingSchema(post: {
+  title: string;
+  description: string;
+  date: string;
+  author: string;
+  slug: string;
+}) {
+  const url = `${getSiteUrl()}/blog/${post.slug}`;
+  const author =
+    post.author === FOUNDER.name
+      ? {
+          "@type": "Person" as const,
+          name: FOUNDER.name,
+          jobTitle: FOUNDER.jobTitle,
+          url: `${getSiteUrl()}/sobre`,
+        }
+      : {
+          "@type": "Person" as const,
+          name: post.author,
+        };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author,
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: getSiteUrl(),
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    url,
+  };
+}

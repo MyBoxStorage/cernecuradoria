@@ -11,7 +11,9 @@
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
+    "gray-matter": "^4.0.3",
     "next": "16.3.0",
+    "next-mdx-remote": "^6.0.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "resend": "^6.18.1"
