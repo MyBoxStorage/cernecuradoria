@@ -98,11 +98,13 @@ export default function SobrePage() {
       <section className="sobre-prose sobre-prose--closing" aria-label="Fechamento">
         <div className="sobre-prose__inner">
           <blockquote className="sobre-closing-quote">
-            É esse olhar — herdado, e agora meu — que guio em cada avaliação:
-            cuidado com o que tem valor, discrição com quem está vivendo um
+            É esse olhar — herdado, e agora meu — que guio em cada avaliação.
+          </blockquote>
+          <p className="sobre-closing-support">
+            Cuidado com o que tem valor, discrição com quem está vivendo um
             momento difícil, e organização para que tudo aconteça sem urgência
             desnecessária.
-          </blockquote>
+          </p>
         </div>
       </section>
 
