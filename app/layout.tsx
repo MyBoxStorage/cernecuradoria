@@ -17,17 +17,17 @@ import {
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import "@/styles/globals.css";
 
+/**
+ * Fraunces (display) — único preload acima da dobra (hero H1).
+ * Arquivo já restrito a opsz + wght 400–600 (SOFT/WONK pinados), em woff2.
+ * Itálico não entra no bundle crítico: o site não usa font-style: italic.
+ */
 const fraunces = localFont({
   src: [
     {
-      path: "../public/fonts/Fraunces-Variable.ttf",
-      weight: "100 900",
+      path: "../public/fonts/Fraunces-Variable.woff2",
+      weight: "400 600",
       style: "normal",
-    },
-    {
-      path: "../public/fonts/Fraunces-Italic-Variable.ttf",
-      weight: "100 900",
-      style: "italic",
     },
   ],
   variable: "--font-display",
@@ -35,32 +35,26 @@ const fraunces = localFont({
   preload: true,
 });
 
+/**
+ * Switzer (corpo/UI) — sem preload; só os pesos realmente usados (400/500).
+ * Semibold/Bold existem em public/fonts como woff2, mas não são carregados.
+ */
 const switzer = localFont({
   src: [
     {
-      path: "../public/fonts/Switzer-Regular.otf",
+      path: "../public/fonts/Switzer-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/Switzer-Medium.otf",
+      path: "../public/fonts/Switzer-Medium.woff2",
       weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Switzer-Semibold.otf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Switzer-Bold.otf",
-      weight: "700",
       style: "normal",
     },
   ],
   variable: "--font-sans",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const siteUrl = getSiteUrl();
