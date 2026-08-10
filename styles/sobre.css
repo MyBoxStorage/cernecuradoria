@@ -40,7 +40,7 @@
 }
 
 .sobre-founder {
-  padding: var(--space-9) 48px;
+  padding: var(--space-9) 48px var(--space-8);
 }
 
 .sobre-founder__inner {
@@ -84,14 +84,33 @@
   margin: 0 0 var(--space-5);
 }
 
-.sobre-founder__bio,
-.sobre-prose p {
+.sobre-founder__bio {
   font-family: var(--font-sans), sans-serif;
   font-size: var(--fs-body);
   line-height: var(--lh-relaxed);
   color: var(--text-operacao-secondary);
   margin: 0;
   max-width: 40rem;
+}
+
+.sobre-prose p {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-operacao-secondary);
+  margin: 0;
+  max-width: 40rem;
+}
+
+.sobre-closing-quote {
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-display);
+  font-variation-settings: var(--fv-display);
+  font-weight: 560;
+  color: var(--cerne-charcoal);
+  max-width: 24ch;
+  line-height: var(--lh-tight);
+  margin: 0;
 }
 
 .sobre-prose {
@@ -120,6 +139,11 @@
 
   .sobre-hero__title {
     font-size: var(--fs-h2);
+    max-width: none;
+  }
+
+  .sobre-closing-quote {
+    font-size: var(--fs-h1);
     max-width: none;
   }
 
