@@ -1,10 +1,13 @@
 import { ImageResponse } from "next/og";
+import { loadFrauncesOgFont } from "@/lib/og-font";
 
 export const alt = "Cerne Curadoria";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  const fraunces = await loadFrauncesOgFont();
+
   return new ImageResponse(
     (
       <div
@@ -17,7 +20,7 @@ export default function OpenGraphImage() {
           justifyContent: "center",
           background: "#1C2620",
           color: "#F4F1EA",
-          fontFamily: "Georgia, 'Times New Roman', serif",
+          fontFamily: "Fraunces",
         }}
       >
         <div
@@ -36,14 +39,14 @@ export default function OpenGraphImage() {
             marginTop: 12,
             fontSize: 28,
             color: "#B08D4F",
-            fontFamily: "Helvetica, Arial, sans-serif",
             letterSpacing: "0.04em",
+            fontWeight: 400,
           }}
         >
           Curadoria
         </div>
       </div>
     ),
-    { ...size },
+    { ...size, fonts: [fraunces] },
   );
 }

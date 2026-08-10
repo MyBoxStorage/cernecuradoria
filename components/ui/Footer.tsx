@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { AREAS_SERVED, SITE_LAUNCHED } from "@/lib/constants";
+import {
+  AREAS_SERVED,
+  SITE_LAUNCHED,
+  getWhatsAppUrl,
+} from "@/lib/constants";
 import "./ui.css";
 
 export function Footer() {
@@ -16,10 +20,15 @@ export function Footer() {
       <div>
         <div className="footer__col-title">Contato</div>
         <div className="footer__links">
-          {/* TODO: link real */}
+          {/* TODO (Pedro Henrique): URL real do Instagram */}
           <a href="#">Instagram</a>
-          {/* TODO: link real */}
-          <a href="#">WhatsApp</a>
+          <a
+            href={getWhatsAppUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
         </div>
       </div>
 

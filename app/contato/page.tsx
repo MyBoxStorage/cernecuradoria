@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Contato — Cerne Curadoria",
   },
   description:
-    "Solicite uma avaliação gratuita e sem compromisso para o acervo da sua casa. Atendimento na Zona Sul do Rio de Janeiro e na Barra da Tijuca.",
+    "Solicite uma avaliação gratuita e sem compromisso para o acervo da sua casa. Atendemos com discrição na Zona Sul do Rio de Janeiro e na Barra da Tijuca.",
   alternates: {
     canonical: absoluteUrl("/contato"),
   },

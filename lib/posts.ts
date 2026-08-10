@@ -2,9 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { compileMDX } from "next-mdx-remote/rsc";
+import { FOUNDER } from "./constants";
 
 export const POST_AUTHORS = [
-  "Pedro Henrique",
+  FOUNDER.name,
   "Alexandre Teixeira de Souza",
 ] as const;
 

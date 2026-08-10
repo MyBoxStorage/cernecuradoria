@@ -1,9 +1,12 @@
 import { ImageResponse } from "next/og";
+import { loadFrauncesOgFont } from "@/lib/og-font";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-export default function Icon() {
+export default async function Icon() {
+  const fraunces = await loadFrauncesOgFont();
+
   return new ImageResponse(
     (
       <div
@@ -17,13 +20,13 @@ export default function Icon() {
           borderRadius: "50%",
           color: "#F4F1EA",
           fontSize: 18,
-          fontFamily: "Georgia, 'Times New Roman', serif",
+          fontFamily: "Fraunces",
           fontWeight: 500,
         }}
       >
         C
       </div>
     ),
-    { ...size },
+    { ...size, fonts: [fraunces] },
   );
 }

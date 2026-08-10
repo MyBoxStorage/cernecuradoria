@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Sobre — Cerne Curadoria",
   },
   description:
-    "Conheça a origem da Cerne Curadoria: uma nova frente de trabalho nascida da curadoria de arte e antiguidades, fundada por Pedro Henrique.",
+    "Conheça a origem da Cerne Curadoria: uma frente de trabalho nascida da curadoria de arte e antiguidades, fundada por Pedro Henrique no Rio de Janeiro.",
   alternates: {
     canonical: absoluteUrl("/sobre"),
   },

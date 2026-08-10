@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Cerne Curadoria — Curadoria de Espólios na Zona Sul do Rio de Janeiro",
   },
   description:
-    "Esvaziamento completo de imóveis em inventário, mudança ou divórcio. Curadoria de espólios com discrição, na Zona Sul do Rio e Barra da Tijuca.",
+    "Esvaziamento completo de imóveis em inventário, mudança ou divórcio. Curadoria de espólios com discrição, na Zona Sul do Rio de Janeiro e Barra da Tijuca.",
   alternates: {
     canonical: absoluteUrl("/"),
   },

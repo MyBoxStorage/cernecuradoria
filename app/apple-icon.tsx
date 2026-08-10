@@ -1,9 +1,12 @@
 import { ImageResponse } from "next/og";
+import { loadFrauncesOgFont } from "@/lib/og-font";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
-export default function AppleIcon() {
+export default async function AppleIcon() {
+  const fraunces = await loadFrauncesOgFont();
+
   return new ImageResponse(
     (
       <div
@@ -17,13 +20,13 @@ export default function AppleIcon() {
           borderRadius: "50%",
           color: "#F4F1EA",
           fontSize: 96,
-          fontFamily: "Georgia, 'Times New Roman', serif",
+          fontFamily: "Fraunces",
           fontWeight: 500,
         }}
       >
         C
       </div>
     ),
-    { ...size },
+    { ...size, fonts: [fraunces] },
   );
 }

@@ -8,7 +8,7 @@ import "@/styles/blog.css";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Notas sobre curadoria de espólios, inventário e herança — o que fazer com o que fica, pela perspectiva da Cerne Curadoria.",
+    "Notas e reflexões sobre curadoria de espólios, inventário e herança — o que fazer com o que fica, pela perspectiva da Cerne Curadoria no Rio de Janeiro.",
   alternates: {
     canonical: absoluteUrl("/blog"),
   },

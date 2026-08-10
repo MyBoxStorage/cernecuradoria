@@ -39,8 +39,8 @@ export function organizationSchema() {
       name: FOUNDER.name,
       jobTitle: FOUNDER.jobTitle,
     },
-    // Preencher depois com Instagram e LinkedIn reais (ver FOUNDER.sameAs / redes da empresa)
-    sameAs: [] as string[],
+    // Preencher FOUNDER.sameAs (Instagram / LinkedIn) — Organization e Person reutilizam
+    sameAs: [...FOUNDER.sameAs],
   };
 }
 
