@@ -92,17 +92,12 @@ export default function SobrePage() {
             orientação direta dele. Ele segue presente nas decisões da Cerne e,
             sempre que faz sentido, participa pessoalmente de visitas.
           </p>
-        </div>
-      </section>
-
-      <section className="sobre-prose sobre-prose--closing" aria-label="Fechamento">
-        <div className="sobre-prose__inner">
-          <blockquote className="sobre-closing-quote">
+          <p>
             É esse olhar — herdado, e agora meu — que guio em cada avaliação:
             cuidado com o que tem valor, discrição com quem está vivendo um
             momento difícil, e organização para que tudo aconteça sem urgência
             desnecessária.
-          </blockquote>
+          </p>
         </div>
       </section>
 

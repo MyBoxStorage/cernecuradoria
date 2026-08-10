@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - navigation "Principal" [ref=e2]:
+    - link "CERNE Curadoria" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: CERNE
+      - generic [ref=e5]: Curadoria
+    - generic [ref=e6]:
+      - link "Home" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - link "Sobre" [ref=e8] [cursor=pointer]:
+        - /url: /sobre
+      - link "Como Funciona" [ref=e9] [cursor=pointer]:
+        - /url: /como-funciona
+      - link "Contato" [ref=e10] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Curadoria de espólios
+      - heading "O mesmo cuidado de uma curadoria de arte, agora para a casa inteira." [level=1] [ref=e15]
+      - paragraph [ref=e16]: A Cerne Curadoria realiza o esvaziamento completo de imóveis em processos de inventário, mudança ou divórcio, com curadoria e leilão especializado — na Zona Sul do Rio de Janeiro e na Barra da Tijuca.
+      - link "Solicitar avaliação gratuita" [ref=e18] [cursor=pointer]:
+        - /url: /contato
+    - region [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e23]: Como funciona
+        - heading "Da avaliação à entrega, com clareza em cada etapa." [level=2] [ref=e24]
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - generic [ref=e27]: "01"
+            - heading "Avaliação" [level=3] [ref=e28]
+            - paragraph [ref=e29]: Vídeo e fotos da casa, sem compromisso.
+          - listitem [ref=e30]:
+            - generic [ref=e31]: "02"
+            - heading "Visita" [level=3] [ref=e32]
+            - paragraph [ref=e33]: Curadoria presencial e explicação de todo o processo.
+          - listitem [ref=e34]:
+            - generic [ref=e35]: "03"
+            - heading "Leilão especializado" [level=3] [ref=e36]
+            - paragraph [ref=e37]: Cada peça avaliada e destinada com cuidado.
+          - listitem [ref=e38]:
+            - generic [ref=e39]: "04"
+            - heading "Entrega" [level=3] [ref=e40]
+            - paragraph [ref=e41]: Imóvel esvaziado, com clareza do início ao fim.
+        - link "Ver o processo completo →" [ref=e42] [cursor=pointer]:
+          - /url: /como-funciona
+    - region [ref=e43]:
+      - generic [ref=e44]:
+        - paragraph [ref=e47]: Onde atuamos
+        - heading "Zona Sul do Rio de Janeiro e Barra da Tijuca." [level=2] [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - heading "Zona Sul" [level=3] [ref=e51]
+            - list [ref=e52]:
+              - listitem [ref=e53]: Leblon
+              - listitem [ref=e54]: Ipanema
+              - listitem [ref=e55]: Gávea
+              - listitem [ref=e56]: Jardim Botânico
+              - listitem [ref=e57]: Lagoa
+              - listitem [ref=e58]: Botafogo
+              - listitem [ref=e59]: Flamengo
+              - listitem [ref=e60]: Laranjeiras
+              - listitem [ref=e61]: Urca
+              - listitem [ref=e62]: Copacabana
+              - listitem [ref=e63]: São Conrado
+          - generic [ref=e64]:
+            - heading "Barra da Tijuca" [level=3] [ref=e65]
+            - list [ref=e66]:
+              - listitem [ref=e67]: Barra da Tijuca
+              - listitem [ref=e68]: Recreio dos Bandeirantes
+              - listitem [ref=e69]: Joá
+    - generic [ref=e71]:
+      - paragraph [ref=e74]: Origem
+      - blockquote [ref=e75]: O mesmo cuidado que avalia uma pintura acadêmica hoje se estende ao restante da casa.
+      - paragraph [ref=e76]: A Cerne nasce da experiência de curadoria de arte e antiguidades de uma galeria carioca com décadas de atuação no Rio de Janeiro.
+      - link "Conhecer a história →" [ref=e77] [cursor=pointer]:
+        - /url: /sobre
+    - generic [ref=e79]:
+      - paragraph [ref=e80]: Uma avaliação inicial não tem custo nem compromisso. É uma conversa para entender a situação da família e explicar como o processo funciona.
+      - link "Solicitar avaliação gratuita" [ref=e81] [cursor=pointer]:
+        - /url: /contato
+  - contentinfo [ref=e82]:
+    - generic [ref=e83]:
+      - generic [ref=e84]: CERNECuradoria
+      - paragraph [ref=e85]: Zona Sul do Rio de Janeiro e Barra da Tijuca
+    - generic [ref=e86]:
+      - generic [ref=e87]: Contato
+      - generic [ref=e88]:
+        - link "Instagram" [ref=e89] [cursor=pointer]:
+          - /url: "#"
+        - link "WhatsApp" [ref=e90] [cursor=pointer]:
+          - /url: https://wa.me/5521973003715?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Cerne%20Curadoria.
+  - link "Falar no WhatsApp" [ref=e92] [cursor=pointer]:
+    - /url: https://wa.me/5521973003715?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Cerne%20Curadoria.
+  - alert [ref=e96]
+  - dialog "Consentimento de cookies" [ref=e97]:
+    - paragraph [ref=e98]:
+      - text: Usamos cookies para medir audiência do site, apenas com o seu consentimento. Veja a
+      - link "Política de Privacidade" [ref=e99] [cursor=pointer]:
+        - /url: /politica-de-privacidade
+      - text: .
+    - generic [ref=e100]:
+      - button "Recusar" [ref=e101] [cursor=pointer]
+      - button "Aceitar" [ref=e102] [cursor=pointer]

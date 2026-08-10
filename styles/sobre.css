@@ -102,17 +102,6 @@
   max-width: 40rem;
 }
 
-.sobre-closing-quote {
-  font-family: var(--font-display), serif;
-  font-size: var(--fs-h1);
-  font-variation-settings: var(--fv-deck);
-  font-weight: 400;
-  color: var(--cerne-charcoal);
-  max-width: 34ch;
-  line-height: var(--lh-tight);
-  margin: 0;
-}
-
 .sobre-prose {
   padding: 0 48px var(--space-9);
 }
@@ -125,10 +114,6 @@
   gap: var(--space-7);
 }
 
-.sobre-prose--closing {
-  padding-bottom: var(--space-10);
-}
-
 @media (max-width: 768px) {
   .sobre-hero,
   .sobre-founder,
@@ -138,11 +123,6 @@
   }
 
   .sobre-hero__title {
-    font-size: var(--fs-h2);
-    max-width: none;
-  }
-
-  .sobre-closing-quote {
     font-size: var(--fs-h2);
     max-width: none;
   }

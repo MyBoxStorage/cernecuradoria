@@ -1,0 +1,145 @@
+- generic [active] [ref=f1e1]:
+  - navigation "Principal" [ref=f1e2]:
+    - link "CERNE Curadoria" [ref=f1e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f1e4]: CERNE
+      - generic [ref=f1e5]: Curadoria
+    - generic [ref=f1e6]:
+      - link "Home" [ref=f1e7] [cursor=pointer]:
+        - /url: /
+      - link "Sobre" [ref=f1e8] [cursor=pointer]:
+        - /url: /sobre
+      - link "Como Funciona" [ref=f1e9] [cursor=pointer]:
+        - /url: /como-funciona
+      - link "Contato" [ref=f1e10] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=f1e11]:
+    - generic [ref=f1e13]:
+      - paragraph [ref=f1e14]: Curadoria de espólios
+      - heading "O mesmo cuidado de uma curadoria de arte, agora para a casa inteira." [level=1] [ref=f1e15]
+      - paragraph [ref=f1e16]: A Cerne Curadoria realiza o esvaziamento completo de imóveis em processos de inventário, mudança ou divórcio, com curadoria e leilão especializado — na Zona Sul do Rio de Janeiro e na Barra da Tijuca.
+      - link "Solicitar avaliação gratuita" [ref=f1e18] [cursor=pointer]:
+        - /url: /contato
+    - region [ref=f1e19]:
+      - generic [ref=f1e20]:
+        - paragraph [ref=f1e23]: Como funciona
+        - heading "Da avaliação à entrega, com clareza em cada etapa." [level=2] [ref=f1e24]
+        - list [ref=f1e25]:
+          - listitem [ref=f1e26]:
+            - generic [ref=f1e27]: "01"
+            - heading "Avaliação" [level=3] [ref=f1e28]
+            - paragraph [ref=f1e29]: Vídeo e fotos da casa, sem compromisso.
+          - listitem [ref=f1e30]:
+            - generic [ref=f1e31]: "02"
+            - heading "Visita" [level=3] [ref=f1e32]
+            - paragraph [ref=f1e33]: Curadoria presencial e explicação de todo o processo.
+          - listitem [ref=f1e34]:
+            - generic [ref=f1e35]: "03"
+            - heading "Leilão especializado" [level=3] [ref=f1e36]
+            - paragraph [ref=f1e37]: Cada peça avaliada e destinada com cuidado.
+          - listitem [ref=f1e38]:
+            - generic [ref=f1e39]: "04"
+            - heading "Entrega" [level=3] [ref=f1e40]
+            - paragraph [ref=f1e41]: Imóvel esvaziado, com clareza do início ao fim.
+        - link "Ver o processo completo →" [ref=f1e42] [cursor=pointer]:
+          - /url: /como-funciona
+    - region [ref=f1e43]:
+      - generic [ref=f1e44]:
+        - paragraph [ref=f1e47]: Onde atuamos
+        - heading "Zona Sul do Rio de Janeiro e Barra da Tijuca." [level=2] [ref=f1e48]
+        - generic [ref=f1e49]:
+          - generic [ref=f1e50]:
+            - heading "Zona Sul" [level=3] [ref=f1e51]
+            - list [ref=f1e52]:
+              - listitem [ref=f1e53]:
+                - generic [ref=f1e54]: Leblon
+                - generic [ref=f1e55]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e56]: "01"
+              - listitem [ref=f1e57]:
+                - generic [ref=f1e58]: Ipanema
+                - generic [ref=f1e59]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e60]: "02"
+              - listitem [ref=f1e61]:
+                - generic [ref=f1e62]: Gávea
+                - generic [ref=f1e63]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e64]: "03"
+              - listitem [ref=f1e65]:
+                - generic [ref=f1e66]: Jardim Botânico
+                - generic [ref=f1e67]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e68]: "04"
+              - listitem [ref=f1e69]:
+                - generic [ref=f1e70]: Lagoa
+                - generic [ref=f1e71]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e72]: "05"
+              - listitem [ref=f1e73]:
+                - generic [ref=f1e74]: Botafogo
+                - generic [ref=f1e75]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e76]: "06"
+              - listitem [ref=f1e77]:
+                - generic [ref=f1e78]: Flamengo
+                - generic [ref=f1e79]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e80]: "07"
+              - listitem [ref=f1e81]:
+                - generic [ref=f1e82]: Laranjeiras
+                - generic [ref=f1e83]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e84]: "08"
+              - listitem [ref=f1e85]:
+                - generic [ref=f1e86]: Urca
+                - generic [ref=f1e87]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e88]: "09"
+              - listitem [ref=f1e89]:
+                - generic [ref=f1e90]: Copacabana
+                - generic [ref=f1e91]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e92]: "10"
+              - listitem [ref=f1e93]:
+                - generic [ref=f1e94]: São Conrado
+                - generic [ref=f1e95]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e96]: "11"
+          - generic [ref=f1e97]:
+            - heading "Barra da Tijuca" [level=3] [ref=f1e98]
+            - list [ref=f1e99]:
+              - listitem [ref=f1e100]:
+                - generic [ref=f1e101]: Barra da Tijuca
+                - generic [ref=f1e102]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e103]: "01"
+              - listitem [ref=f1e104]:
+                - generic [ref=f1e105]: Recreio dos Bandeirantes
+                - generic [ref=f1e106]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e107]: "02"
+              - listitem [ref=f1e108]:
+                - generic [ref=f1e109]: Joá
+                - generic [ref=f1e110]: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                - generic [ref=f1e111]: "03"
+    - generic [ref=f1e113]:
+      - paragraph [ref=f1e116]: Origem
+      - blockquote [ref=f1e117]: O mesmo cuidado que avalia uma pintura acadêmica hoje se estende ao restante da casa.
+      - paragraph [ref=f1e118]: A Cerne nasce da experiência de curadoria de arte e antiguidades de uma galeria carioca com décadas de atuação no Rio de Janeiro.
+      - link "Conhecer a história →" [ref=f1e119] [cursor=pointer]:
+        - /url: /sobre
+    - generic [ref=f1e121]:
+      - paragraph [ref=f1e122]: Uma avaliação inicial não tem custo nem compromisso. É uma conversa para entender a situação da família e explicar como o processo funciona.
+      - link "Solicitar avaliação gratuita" [ref=f1e123] [cursor=pointer]:
+        - /url: /contato
+  - contentinfo [ref=f1e124]:
+    - generic [ref=f1e125]:
+      - generic [ref=f1e126]: CERNECuradoria
+      - paragraph [ref=f1e127]: Zona Sul do Rio de Janeiro e Barra da Tijuca
+    - generic [ref=f1e128]:
+      - generic [ref=f1e129]: Contato
+      - generic [ref=f1e130]:
+        - link "Instagram" [ref=f1e131] [cursor=pointer]:
+          - /url: "#"
+        - link "WhatsApp" [ref=f1e132] [cursor=pointer]:
+          - /url: https://wa.me/5521973003715?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Cerne%20Curadoria.
+  - link "Falar no WhatsApp" [ref=f1e134] [cursor=pointer]:
+    - /url: https://wa.me/5521973003715?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Cerne%20Curadoria.
+  - alert [ref=f1e138]
+  - dialog "Consentimento de cookies" [ref=f1e139]:
+    - paragraph [ref=f1e140]:
+      - text: Usamos cookies para medir audiência do site, apenas com o seu consentimento. Veja a
+      - link "Política de Privacidade" [ref=f1e141] [cursor=pointer]:
+        - /url: /politica-de-privacidade
+      - text: .
+    - generic [ref=f1e142]:
+      - button "Recusar" [ref=f1e143] [cursor=pointer]
+      - button "Aceitar" [ref=f1e144] [cursor=pointer]
