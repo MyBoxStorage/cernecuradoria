@@ -104,23 +104,13 @@
 
 .sobre-closing-quote {
   font-family: var(--font-display), serif;
-  font-size: var(--fs-display);
-  font-variation-settings: var(--fv-display);
-  font-weight: 560;
+  font-size: var(--fs-h1);
+  font-variation-settings: var(--fv-deck);
+  font-weight: 400;
   color: var(--cerne-charcoal);
-  max-width: 20ch;
+  max-width: 34ch;
   line-height: var(--lh-tight);
   margin: 0;
-}
-
-.sobre-prose .sobre-closing-support {
-  font-family: var(--font-sans), sans-serif;
-  font-size: var(--fs-body-lg);
-  line-height: var(--lh-relaxed);
-  color: var(--cerne-charcoal);
-  max-width: 42ch;
-  margin-top: var(--space-5);
-  margin-bottom: 0;
 }
 
 .sobre-prose {
@@ -153,11 +143,7 @@
   }
 
   .sobre-closing-quote {
-    font-size: var(--fs-h1);
-    max-width: none;
-  }
-
-  .sobre-prose .sobre-closing-support {
+    font-size: var(--fs-h2);
     max-width: none;
   }
 
