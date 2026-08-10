@@ -1,5 +1,7 @@
 import {
   FOUNDER,
+  NEIGHBORHOODS_BARRA,
+  NEIGHBORHOODS_ZONA_SUL,
   SITE_DESCRIPTION,
   SITE_NAME,
   WHATSAPP_PHONE,
@@ -37,5 +39,31 @@ export function websiteSchema() {
     "@type": "WebSite",
     name: SITE_NAME,
     url: getSiteUrl(),
+  };
+}
+
+export function serviceSchema() {
+  const neighborhoods = [
+    ...NEIGHBORHOODS_ZONA_SUL,
+    ...NEIGHBORHOODS_BARRA,
+  ];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Curadoria e Esvaziamento de Espólios",
+    provider: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: getSiteUrl(),
+    },
+    areaServed: [
+      { "@type": "City", name: "Rio de Janeiro" },
+      ...neighborhoods.map((name) => ({
+        "@type": "Place",
+        name,
+      })),
+    ],
+    serviceType: "Curadoria de espólio",
   };
 }

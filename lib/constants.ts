@@ -16,6 +16,31 @@ export const WHATSAPP_MESSAGE =
 
 export const AREAS_SERVED = "Zona Sul do Rio de Janeiro e Barra da Tijuca";
 
+/**
+ * Lista de bairros para Home / schema Service.
+ * TODO (Pedro Henrique): confirmar se algum bairro não faz sentido atender ou se falta algum —
+ * montada pela divisão geográfica padrão da Zona Sul, não por dado confirmado caso a caso.
+ */
+export const NEIGHBORHOODS_ZONA_SUL = [
+  "Leblon",
+  "Ipanema",
+  "Gávea",
+  "Jardim Botânico",
+  "Lagoa",
+  "Botafogo",
+  "Flamengo",
+  "Laranjeiras",
+  "Urca",
+  "Copacabana",
+  "São Conrado",
+] as const;
+
+export const NEIGHBORHOODS_BARRA = [
+  "Barra da Tijuca",
+  "Recreio dos Bandeirantes",
+  "Joá",
+] as const;
+
 export const FOUNDER = {
   name: "Pedro Henrique",
   jobTitle: "Fundador e Curador",

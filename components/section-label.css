@@ -1,0 +1,24 @@
+.section-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.section-label__rule {
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--cerne-bronze);
+}
+
+.section-label__text {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-overline);
+  font-weight: 500;
+  letter-spacing: var(--tracking-overline);
+  text-transform: uppercase;
+  color: var(--cerne-bronze);
+  margin: 0;
+}
