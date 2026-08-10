@@ -1,0 +1,85 @@
+/* Portado do Design System Cerne — nomes de variáveis mantidos exatamente.
+   --font-display e --font-sans são definidos via next/font/local em app/layout.tsx. */
+
+:root {
+  /* Colors */
+  --cerne-charcoal: #1c2620;
+  --cerne-bronze: #b08d4f;
+  --cerne-offwhite: #f4f1ea;
+
+  --charcoal-10: color-mix(in oklab, var(--cerne-charcoal) 10%, var(--cerne-offwhite));
+  --charcoal-20: color-mix(in oklab, var(--cerne-charcoal) 20%, var(--cerne-offwhite));
+  --charcoal-40: color-mix(in oklab, var(--cerne-charcoal) 40%, var(--cerne-offwhite));
+  --charcoal-70: color-mix(in oklab, var(--cerne-charcoal) 70%, var(--cerne-offwhite));
+
+  --bronze-10: color-mix(in oklab, var(--cerne-bronze) 10%, var(--cerne-offwhite));
+  --bronze-20: color-mix(in oklab, var(--cerne-bronze) 20%, var(--cerne-offwhite));
+  --bronze-40: color-mix(in oklab, var(--cerne-bronze) 40%, var(--cerne-offwhite));
+  --bronze-70: color-mix(in oklab, var(--cerne-bronze) 70%, var(--cerne-offwhite));
+
+  --offwhite-70-on-charcoal: color-mix(
+    in oklab,
+    var(--cerne-offwhite) 70%,
+    var(--cerne-charcoal)
+  );
+  --offwhite-40-on-charcoal: color-mix(
+    in oklab,
+    var(--cerne-offwhite) 40%,
+    var(--cerne-charcoal)
+  );
+
+  --surface-operacao: var(--cerne-offwhite);
+  --text-operacao-primary: var(--cerne-charcoal);
+  --text-operacao-secondary: var(--charcoal-70);
+  --text-operacao-muted: var(--charcoal-40);
+  --accent-operacao: var(--cerne-bronze);
+  --border-operacao: var(--charcoal-20);
+  --border-operacao-subtle: var(--charcoal-10);
+
+  --surface-presenca: var(--cerne-charcoal);
+  --text-presenca-primary: var(--cerne-offwhite);
+  --text-presenca-secondary: var(--offwhite-70-on-charcoal);
+  --text-presenca-muted: var(--offwhite-40-on-charcoal);
+  --accent-presenca: var(--cerne-bronze);
+  --border-presenca: color-mix(in oklab, var(--cerne-offwhite) 20%, var(--cerne-charcoal));
+
+  --surface-card: #ffffff;
+  --shadow-color: color-mix(in oklab, var(--cerne-charcoal) 14%, transparent);
+
+  /* Typography scale */
+  --fs-display: 64px;
+  --fs-h1: 48px;
+  --fs-h2: 36px;
+  --fs-h3: 28px;
+  --fs-h4: 22px;
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-small: 13px;
+  --fs-overline: 12px;
+
+  --lh-tight: 1.15;
+  --lh-relaxed: 1.55;
+
+  --tracking-overline: 0.08em;
+
+  --fv-display: "opsz" 120, "wght" 560;
+  --fv-deck: "opsz" 40, "wght" 400;
+  --fv-text: "opsz" 12, "wght" 400;
+  --fv-condensed: "opsz" 10, "wght" 500;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --shadow-card: 0 1px 2px var(--shadow-color), 0 8px 24px -12px var(--shadow-color);
+}

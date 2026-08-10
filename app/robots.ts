@@ -1,0 +1,13 @@
+import type { MetadataRoute } from "next";
+import { getSiteUrl } from "@/lib/constants";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/politica-de-privacidade", "/termos-de-uso"],
+    },
+    sitemap: `${getSiteUrl()}/sitemap.xml`,
+  };
+}
