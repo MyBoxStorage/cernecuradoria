@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/constants";
 import "@/styles/legal.css";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
   robots: { index: false, follow: true },
+  alternates: {
+    canonical: absoluteUrl("/politica-de-privacidade"),
+  },
 };
 
 const SECTIONS = [

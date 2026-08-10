@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import {
   NEIGHBORHOODS_BARRA,
   NEIGHBORHOODS_ZONA_SUL,
+  absoluteUrl,
 } from "@/lib/constants";
 import { serviceSchema } from "@/lib/schema";
 import "@/styles/home.css";
@@ -16,7 +17,10 @@ export const metadata: Metadata = {
       "Cerne Curadoria — Curadoria de Espólios na Zona Sul do Rio de Janeiro",
   },
   description:
-    "Esvaziamento completo de imóveis em inventário, mudança ou divórcio. Curadoria de espólios com discrição e cuidado, na Zona Sul do Rio de Janeiro e Barra da Tijuca.",
+    "Esvaziamento completo de imóveis em inventário, mudança ou divórcio. Curadoria de espólios com discrição, na Zona Sul do Rio e Barra da Tijuca.",
+  alternates: {
+    canonical: absoluteUrl("/"),
+  },
 };
 
 const STEPS = [

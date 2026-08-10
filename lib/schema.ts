@@ -9,12 +9,15 @@ import {
 } from "./constants";
 
 export function organizationSchema() {
+  const url = getSiteUrl();
+
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${url}/#organization`,
     name: SITE_NAME,
     description: SITE_DESCRIPTION,
-    url: getSiteUrl(),
+    url,
     areaServed: [
       {
         "@type": "City",
@@ -28,10 +31,11 @@ export function organizationSchema() {
       telephone: `+${WHATSAPP_PHONE}`,
       contactType: "customer service",
       areaServed: "BR",
-      availableLanguage: "Portuguese",
+      availableLanguage: ["Portuguese", "pt-BR"],
     },
     founder: {
       "@type": "Person",
+      "@id": `${url}/#founder`,
       name: FOUNDER.name,
       jobTitle: FOUNDER.jobTitle,
     },
@@ -41,11 +45,18 @@ export function organizationSchema() {
 }
 
 export function websiteSchema() {
+  const url = getSiteUrl();
+
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${url}/#website`,
     name: SITE_NAME,
-    url: getSiteUrl(),
+    url,
+    inLanguage: "pt-BR",
+    publisher: {
+      "@id": `${url}/#organization`,
+    },
   };
 }
 
@@ -110,18 +121,20 @@ export function breadcrumbListSchema(
 }
 
 export function personSchema() {
+  const url = getSiteUrl();
+
   return {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${url}/#founder`,
     name: FOUNDER.name,
     jobTitle: FOUNDER.jobTitle,
     worksFor: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: getSiteUrl(),
+      "@id": `${url}/#organization`,
     },
     description: FOUNDER.description,
     sameAs: [...FOUNDER.sameAs],
+    url: `${url}/sobre`,
   };
 }
 

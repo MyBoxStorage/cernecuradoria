@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FinalCta } from "@/components/FinalCta";
-import { FOUNDER } from "@/lib/constants";
+import { FOUNDER, absoluteUrl } from "@/lib/constants";
 import { breadcrumbListSchema, personSchema } from "@/lib/schema";
 import "@/styles/sobre.css";
 
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     "Conheça a origem da Cerne Curadoria: uma nova frente de trabalho nascida da curadoria de arte e antiguidades, fundada por Pedro Henrique.",
+  alternates: {
+    canonical: absoluteUrl("/sobre"),
+  },
 };
 
 export default function SobrePage() {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FinalCta } from "@/components/FinalCta";
-import { FOUNDER } from "@/lib/constants";
+import { FOUNDER, absoluteUrl } from "@/lib/constants";
 import { formatPostDate, getPostBySlug, getPostSlugs } from "@/lib/posts";
 import { blogPostingSchema, breadcrumbListSchema } from "@/lib/schema";
 import "@/styles/blog.css";
@@ -25,6 +25,9 @@ export async function generateMetadata({
   return {
     title: post.meta.title,
     description: post.meta.description,
+    alternates: {
+      canonical: absoluteUrl(`/blog/${slug}`),
+    },
   };
 }
 

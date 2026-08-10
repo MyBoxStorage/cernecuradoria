@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ContactFlow } from "@/components/ContactFlow";
-import { getWhatsAppUrl } from "@/lib/constants";
+import { absoluteUrl, getWhatsAppUrl } from "@/lib/constants";
 import { breadcrumbListSchema } from "@/lib/schema";
 import "@/styles/contato.css";
 
@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     "Solicite uma avaliação gratuita e sem compromisso para o acervo da sua casa. Atendimento na Zona Sul do Rio de Janeiro e na Barra da Tijuca.",
+  alternates: {
+    canonical: absoluteUrl("/contato"),
+  },
 };
 
 export default function ContatoPage() {

@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
+import { absoluteUrl } from "@/lib/constants";
 import { formatPostDate, getAllPosts } from "@/lib/posts";
 import "@/styles/blog.css";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Notas sobre curadoria de espólios, herança e as decisões que famílias enfrentam ao lidar com o que fica.",
+    "Notas sobre curadoria de espólios, inventário e herança — o que fazer com o que fica, pela perspectiva da Cerne Curadoria.",
+  alternates: {
+    canonical: absoluteUrl("/blog"),
+  },
 };
 
 export default function BlogPage() {

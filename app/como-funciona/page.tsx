@@ -7,6 +7,7 @@ import {
   PROCESS_INTRO,
   PROCESS_STEPS,
 } from "@/lib/como-funciona-content";
+import { absoluteUrl } from "@/lib/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/schema";
 import "@/styles/como-funciona.css";
 
@@ -16,6 +17,9 @@ export const metadata: Metadata = {
   },
   description:
     "Da avaliação inicial ao leilão especializado: veja como funciona, passo a passo, o processo de curadoria e esvaziamento de imóveis da Cerne Curadoria.",
+  alternates: {
+    canonical: absoluteUrl("/como-funciona"),
+  },
 };
 
 export default function ComoFuncionaPage() {
@@ -42,6 +46,7 @@ export default function ComoFuncionaPage() {
           <h1 className="cf-page__title">Como Funciona</h1>
           <p className="cf-page__intro">{PROCESS_INTRO}</p>
 
+          <h2 className="cf-page__process-title">O processo em seis etapas</h2>
           <ol className="cf-timeline">
             {PROCESS_STEPS.map((step) => (
               <li className="cf-step" key={step.number}>
@@ -64,9 +69,12 @@ export default function ComoFuncionaPage() {
         </div>
       </section>
 
-      <section className="cf-faq" aria-label="Perguntas frequentes">
+      <section className="cf-faq" aria-labelledby="faq-heading">
         <div className="cf-faq__inner">
           <SectionLabel>Perguntas frequentes</SectionLabel>
+          <h2 id="faq-heading" className="cf-faq__heading">
+            Perguntas frequentes
+          </h2>
           <FaqAccordion items={FAQ_ITEMS} />
         </div>
       </section>

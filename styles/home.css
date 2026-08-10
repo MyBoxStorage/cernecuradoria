@@ -57,10 +57,11 @@
   font-weight: 500;
   letter-spacing: var(--tracking-overline);
   text-transform: uppercase;
-  color: var(--cerne-bronze);
+  color: var(--bronze-ink);
   margin: 0 0 var(--space-5);
 }
 
+/* H1 sem animação de opacity — candidato a LCP deve pintar imediatamente */
 .home-hero__title {
   font-family: var(--font-display), serif;
   font-size: var(--fs-display);
@@ -87,22 +88,17 @@
 }
 
 .home-hero__eyebrow,
-.home-hero__title,
 .home-hero__subtitle,
 .home-hero__cta {
   animation: home-hero-enter 0.35s ease both;
 }
 
-.home-hero__title {
+.home-hero__subtitle {
   animation-delay: 0.1s;
 }
 
-.home-hero__subtitle {
-  animation-delay: 0.2s;
-}
-
 .home-hero__cta {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 @keyframes home-hero-enter {
@@ -118,7 +114,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .home-hero__eyebrow,
-  .home-hero__title,
   .home-hero__subtitle,
   .home-hero__cta {
     animation: none;

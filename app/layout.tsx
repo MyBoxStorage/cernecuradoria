@@ -11,6 +11,7 @@ import {
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_TAGLINE,
+  absoluteUrl,
   getSiteUrl,
 } from "@/lib/constants";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
@@ -31,6 +32,7 @@ const fraunces = localFont({
   ],
   variable: "--font-display",
   display: "swap",
+  preload: true,
 });
 
 const switzer = localFont({
@@ -58,6 +60,7 @@ const switzer = localFont({
   ],
   variable: "--font-sans",
   display: "swap",
+  preload: true,
 });
 
 const siteUrl = getSiteUrl();
@@ -69,6 +72,11 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  alternates: {
+    types: {
+      "application/rss+xml": absoluteUrl("/feed.xml"),
+    },
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",

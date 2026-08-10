@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/constants";
 import "@/styles/legal.css";
 
 export const metadata: Metadata = {
   title: "Termos de Uso",
   robots: { index: false, follow: true },
+  alternates: {
+    canonical: absoluteUrl("/termos-de-uso"),
+  },
 };
 
 const SECTIONS = [

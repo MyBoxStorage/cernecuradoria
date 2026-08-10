@@ -76,6 +76,12 @@ export function getSiteUrl(): string {
   );
 }
 
+export function absoluteUrl(path = "/"): string {
+  const base = getSiteUrl();
+  if (!path || path === "/") return base;
+  return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export function getWhatsAppUrl(): string {
   const text = encodeURIComponent(WHATSAPP_MESSAGE);
   return `https://wa.me/${WHATSAPP_PHONE}?text=${text}`;

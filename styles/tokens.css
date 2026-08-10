@@ -10,12 +10,22 @@
   --charcoal-10: color-mix(in oklab, var(--cerne-charcoal) 10%, var(--cerne-offwhite));
   --charcoal-20: color-mix(in oklab, var(--cerne-charcoal) 20%, var(--cerne-offwhite));
   --charcoal-40: color-mix(in oklab, var(--cerne-charcoal) 40%, var(--cerne-offwhite));
+  /* ~4.7:1 sobre off-white — uso seguro para texto pequeno “muted” (WCAG AA) */
+  --charcoal-65: color-mix(in oklab, var(--cerne-charcoal) 65%, var(--cerne-offwhite));
   --charcoal-70: color-mix(in oklab, var(--cerne-charcoal) 70%, var(--cerne-offwhite));
 
   --bronze-10: color-mix(in oklab, var(--cerne-bronze) 10%, var(--cerne-offwhite));
   --bronze-20: color-mix(in oklab, var(--cerne-bronze) 20%, var(--cerne-offwhite));
   --bronze-40: color-mix(in oklab, var(--cerne-bronze) 40%, var(--cerne-offwhite));
   --bronze-70: color-mix(in oklab, var(--cerne-bronze) 70%, var(--cerne-offwhite));
+
+  /*
+    Texto de rótulo/eyebrow sobre --cerne-offwhite.
+    --cerne-bronze puro (#B08D4F) sobre off-white fica ~2.75:1 (falha WCAG AA).
+    Esta variação mistura bronze com charcoal (~4.7:1), sem inventar uma 4ª cor.
+    Linhas decorativas e detalhes gráficos continuam em --cerne-bronze.
+  */
+  --bronze-ink: color-mix(in oklab, var(--cerne-bronze) 65%, var(--cerne-charcoal));
 
   --offwhite-70-on-charcoal: color-mix(
     in oklab,
@@ -31,7 +41,8 @@
   --surface-operacao: var(--cerne-offwhite);
   --text-operacao-primary: var(--cerne-charcoal);
   --text-operacao-secondary: var(--charcoal-70);
-  --text-operacao-muted: var(--charcoal-40);
+  /* Antes: charcoal-40 (~2.5:1). Agora charcoal-65 (~4.7:1) para AA em texto pequeno. */
+  --text-operacao-muted: var(--charcoal-65);
   --accent-operacao: var(--cerne-bronze);
   --border-operacao: var(--charcoal-20);
   --border-operacao-subtle: var(--charcoal-10);

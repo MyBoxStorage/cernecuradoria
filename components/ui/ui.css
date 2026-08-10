@@ -144,7 +144,7 @@
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--cerne-bronze);
+  color: var(--bronze-ink);
   margin-bottom: var(--space-3);
 }
 
@@ -234,7 +234,7 @@
 
 .navbar__curadoria {
   font-size: 12px;
-  color: var(--cerne-bronze);
+  color: var(--bronze-ink);
 }
 
 .navbar__links {
@@ -351,7 +351,7 @@
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--offwhite-40-on-charcoal);
+  color: var(--offwhite-70-on-charcoal);
   margin-bottom: var(--space-3);
 }
 

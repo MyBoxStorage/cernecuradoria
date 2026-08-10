@@ -41,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+:focus-visible {
+  outline: 1px solid var(--cerne-bronze);
+  outline-offset: 3px;
+}
+
 img,
 svg {
   display: block;
