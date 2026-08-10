@@ -111,11 +111,13 @@ export default function HomePage() {
             montada com base na divisão geográfica padrão da Zona Sul do Rio,
             não em dado confirmado caso a caso.
           */}
-          <div className="home-areas">
-            <div>
-              <h3 className="home-areas__heading">Zona Sul</h3>
-              <ul className="home-areas__list">
-                {NEIGHBORHOODS_ZONA_SUL.map((name, index) => (
+          <div className="areas-grid">
+            <div className="zona-sul-a">
+              <h3 id="zona-sul-heading" className="home-areas__heading">
+                Zona Sul
+              </h3>
+              <ul className="home-areas__list" aria-labelledby="zona-sul-heading">
+                {NEIGHBORHOODS_ZONA_SUL.slice(0, 6).map((name, index) => (
                   <li key={name} className="area-list-item">
                     <span className="nome">{name}</span>
                     <span className="leader" aria-hidden="true" />
@@ -126,7 +128,20 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="zona-sul-b">
+              <ul className="home-areas__list" aria-labelledby="zona-sul-heading">
+                {NEIGHBORHOODS_ZONA_SUL.slice(6).map((name, index) => (
+                  <li key={name} className="area-list-item">
+                    <span className="nome">{name}</span>
+                    <span className="leader" aria-hidden="true" />
+                    <span className="indice" aria-hidden="true">
+                      {String(index + 7).padStart(2, "0")}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="barra-tijuca">
               <h3 className="home-areas__heading">Barra da Tijuca</h3>
               <ul className="home-areas__list">
                 {NEIGHBORHOODS_BARRA.map((name, index) => (

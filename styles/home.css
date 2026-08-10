@@ -161,10 +161,27 @@
 }
 
 /* 3. Áreas */
-.home-areas {
+.areas-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-8);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--space-6);
+  row-gap: var(--space-7);
+}
+
+.areas-grid .zona-sul-a {
+  grid-column: 1;
+}
+
+.areas-grid .zona-sul-b {
+  grid-column: 2;
+  /* Sem rótulo: alinha o topo da lista com a coluna A (abaixo do heading) */
+  padding-top: calc(var(--fs-overline) * 1 + var(--space-4));
+}
+
+.areas-grid .barra-tijuca {
+  grid-column: 3;
+  /* Espaço extra em relação a A–B: reforça que Barra é outra categoria */
+  margin-inline-start: var(--space-2);
 }
 
 .home-areas__heading {
@@ -244,6 +261,25 @@
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .areas-grid .zona-sul-a {
+    grid-column: 1;
+  }
+
+  .areas-grid .zona-sul-b {
+    grid-column: 2;
+  }
+
+  .areas-grid .barra-tijuca {
+    grid-column: 1 / -1;
+    margin-inline-start: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .home-steps {
     grid-template-columns: 1fr 1fr;
@@ -282,8 +318,21 @@
     gap: var(--space-5);
   }
 
-  .home-areas {
+  .areas-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-7);
+  }
+
+  .areas-grid .zona-sul-a,
+  .areas-grid .zona-sul-b,
+  .areas-grid .barra-tijuca {
+    grid-column: 1;
+  }
+
+  .areas-grid .zona-sul-b {
+    padding-top: 0;
+  }
+
+  .areas-grid .barra-tijuca {
+    margin-inline-start: 0;
   }
 }
