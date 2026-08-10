@@ -1,0 +1,62 @@
+/* Páginas legais — tipografia e espaçamento do site, hierarquia simples */
+
+.legal-page {
+  padding: var(--space-9) 48px var(--space-10);
+}
+
+.legal-page__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.legal-page__title {
+  font-family: var(--font-display), serif;
+  font-size: var(--fs-h1);
+  font-variation-settings: var(--fv-display);
+  font-weight: 560;
+  line-height: var(--lh-tight);
+  color: var(--cerne-charcoal);
+  margin: 0 0 var(--space-3);
+}
+
+.legal-page__updated {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-small);
+  color: var(--text-operacao-muted);
+  margin: 0 0 var(--space-9);
+}
+
+.legal-page__section {
+  margin-bottom: var(--space-7);
+}
+
+.legal-page__section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-page__heading {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  color: var(--cerne-charcoal);
+  margin: 0 0 var(--space-3);
+}
+
+.legal-page__text {
+  font-family: var(--font-sans), sans-serif;
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--text-operacao-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .legal-page__title {
+    font-size: var(--fs-h2);
+  }
+}
