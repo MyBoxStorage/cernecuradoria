@@ -115,16 +115,28 @@ export default function HomePage() {
             <div>
               <h3 className="home-areas__heading">Zona Sul</h3>
               <ul className="home-areas__list">
-                {NEIGHBORHOODS_ZONA_SUL.map((name) => (
-                  <li key={name}>{name}</li>
+                {NEIGHBORHOODS_ZONA_SUL.map((name, index) => (
+                  <li key={name} className="area-list-item">
+                    <span className="nome">{name}</span>
+                    <span className="leader" aria-hidden="true" />
+                    <span className="indice" aria-hidden="true">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>
             <div>
               <h3 className="home-areas__heading">Barra da Tijuca</h3>
               <ul className="home-areas__list">
-                {NEIGHBORHOODS_BARRA.map((name) => (
-                  <li key={name}>{name}</li>
+                {NEIGHBORHOODS_BARRA.map((name, index) => (
+                  <li key={name} className="area-list-item">
+                    <span className="nome">{name}</span>
+                    <span className="leader" aria-hidden="true" />
+                    <span className="indice" aria-hidden="true">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>

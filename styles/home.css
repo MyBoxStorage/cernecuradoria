@@ -183,17 +183,39 @@
   padding: 0;
 }
 
-.home-areas__list li {
+.area-list-item {
+  display: flex;
+  align-items: baseline;
   font-family: var(--font-sans), sans-serif;
   font-size: var(--fs-body-lg);
-  line-height: 1.7;
   color: var(--cerne-charcoal);
-  border-bottom: 1px solid var(--border-operacao-subtle);
-  padding: var(--space-2) 0;
+  padding-block: var(--space-4);
 }
 
-.home-areas__list li:last-child {
-  border-bottom: none;
+.area-list-item .nome {
+  white-space: nowrap;
+}
+
+.area-list-item .leader {
+  flex: 1;
+  overflow: hidden;
+  margin-inline: 0.5ch;
+  min-width: 1ch;
+}
+
+.area-list-item .leader::after {
+  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+  color: var(--cerne-bronze);
+  letter-spacing: 0.15em;
+}
+
+.area-list-item .indice {
+  font-family: var(--font-display), serif;
+  font-variation-settings: "opsz" 24, "wght" 460;
+  font-size: 15px;
+  color: var(--cerne-charcoal);
+  opacity: 0.6;
+  flex-shrink: 0;
 }
 
 /* 4. Origem — pull-quote único da Home */
