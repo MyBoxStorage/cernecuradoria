@@ -23,6 +23,13 @@ export function organizationSchema() {
     ],
     // Telefone provisório — atualizar quando o número definitivo estiver confirmado
     telephone: `+${WHATSAPP_PHONE}`,
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: `+${WHATSAPP_PHONE}`,
+      contactType: "customer service",
+      areaServed: "BR",
+      availableLanguage: "Portuguese",
+    },
     founder: {
       "@type": "Person",
       name: FOUNDER.name,
