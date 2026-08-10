@@ -1,7 +1,7 @@
 /* Página Como Funciona */
 
 .cf-page {
-  padding: var(--space-9) 48px var(--space-10);
+  padding: var(--space-9) 48px var(--space-8);
 }
 
 .cf-page__inner {
