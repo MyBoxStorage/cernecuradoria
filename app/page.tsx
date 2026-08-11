@@ -160,9 +160,12 @@ export default function HomePage() {
       </section>
 
       {/* 4. Origem e confiança */}
-      <section className="home-section home-section--tight">
+      <section className="home-section home-section--tight" aria-labelledby="origem-title">
         <div className="home-section__inner">
           <SectionLabel>Origem</SectionLabel>
+          <h2 id="origem-title" className="sr-only">
+            Origem
+          </h2>
           <blockquote className="origem-quote">
             O mesmo cuidado que avalia uma pintura acadêmica hoje se estende ao
             restante da casa.

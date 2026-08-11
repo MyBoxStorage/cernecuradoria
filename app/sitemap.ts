@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { PUBLIC_ROUTES, getSiteUrl } from "@/lib/constants";
+import { PAGE_LAST_MODIFIED, PUBLIC_ROUTES, getSiteUrl } from "@/lib/constants";
 import { getAllPosts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes: MetadataRoute.Sitemap = PUBLIC_ROUTES.map((route) => ({
     url: `${base}${route === "/" ? "" : route}`,
-    lastModified: new Date(),
+    lastModified: PAGE_LAST_MODIFIED[route],
     changeFrequency: route === "/" || route === "/blog" ? "weekly" : "monthly",
     priority: route === "/" ? 1 : route === "/blog" ? 0.8 : 0.7,
   }));

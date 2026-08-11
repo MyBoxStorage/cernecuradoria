@@ -10,6 +10,7 @@ import {
 
 export function organizationSchema() {
   const url = getSiteUrl();
+  const neighborhoods = [...NEIGHBORHOODS_ZONA_SUL, ...NEIGHBORHOODS_BARRA];
 
   return {
     "@context": "https://schema.org",
@@ -23,6 +24,10 @@ export function organizationSchema() {
         "@type": "City",
         name: "Rio de Janeiro",
       },
+      ...neighborhoods.map((name) => ({
+        "@type": "Place",
+        name,
+      })),
     ],
     // Telefone provisório — atualizar quando o número definitivo estiver confirmado
     telephone: `+${WHATSAPP_PHONE}`,

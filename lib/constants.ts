@@ -69,6 +69,19 @@ export const PUBLIC_ROUTES = [
   "/blog",
 ] as const;
 
+/**
+ * Data real da última edição de conteúdo de cada página estática, usada no sitemap.
+ * NÃO é a data do build — só atualizar manualmente quando o TEXTO da página mudar de fato.
+ * Formato ISO (YYYY-MM-DD). Ver GEO-ESTRATEGIA-2026-08-11.md (achado #2 e #6).
+ */
+export const PAGE_LAST_MODIFIED: Record<(typeof PUBLIC_ROUTES)[number], string> = {
+  "/": "2026-08-11",
+  "/sobre": "2026-08-11",
+  "/como-funciona": "2026-08-11",
+  "/contato": "2026-08-11",
+  "/blog": "2026-08-11",
+};
+
 export function getSiteUrl(): string {
   return (
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
