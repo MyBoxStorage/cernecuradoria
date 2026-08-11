@@ -126,36 +126,63 @@
 .contact-options {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: 0;
   list-style: none;
   margin: 0;
   padding: 0;
+  border-top: 1px solid var(--border-operacao);
 }
 
 .contact-option {
+  position: relative;
   display: block;
   width: 100%;
   text-align: left;
   background: transparent;
-  border: 1px solid var(--border-operacao);
-  border-radius: var(--radius-sm);
-  padding: var(--space-4) var(--space-5);
+  border: none;
+  border-bottom: 1px solid var(--border-operacao);
+  border-radius: 0;
+  padding: var(--space-4) var(--space-5) var(--space-4) calc(var(--space-5) + 14px);
   cursor: pointer;
   font-family: var(--font-sans), sans-serif;
-  font-size: var(--fs-body);
+  font-size: var(--fs-body-lg);
   line-height: var(--lh-relaxed);
   color: var(--cerne-charcoal);
-  transition: border-color 0.15s ease, background-color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+.contact-option::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2px;
+  height: 60%;
+  background: var(--cerne-bronze);
+  transform: translateY(-50%) scaleY(0);
+  transform-origin: center;
+  transition: transform 0.15s ease;
 }
 
 .contact-option:hover {
-  border-color: var(--charcoal-40);
-  background: var(--charcoal-10);
+  color: var(--cerne-bronze);
+}
+
+.contact-option:hover::before,
+.contact-option:focus-visible::before {
+  transform: translateY(-50%) scaleY(1);
 }
 
 .contact-option:focus-visible {
   outline: 1px solid var(--cerne-bronze);
-  outline-offset: 2px;
+  outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-option,
+  .contact-option::before {
+    transition: none;
+  }
 }
 
 .contact-fields {
