@@ -115,8 +115,11 @@ export default function RootLayout({
             __html: JSON.stringify(schemas[1]),
           }}
         />
+        <a href="#main-content" className="skip-link">
+          Pular para o conteúdo
+        </a>
         <NavBar />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
         <WhatsAppButton />
         <CookieConsentBanner />

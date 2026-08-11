@@ -28,6 +28,7 @@ export function NavBar() {
               key={link.href}
               href={link.href}
               className={`navbar__link${active ? " navbar__link--active" : ""}`}
+              aria-current={active ? "page" : undefined}
             >
               {link.label}
             </Link>
@@ -76,6 +77,7 @@ export function NavBar() {
               key={link.href}
               href={link.href}
               className={`navbar__link${active ? " navbar__link--active" : ""}`}
+              aria-current={active ? "page" : undefined}
               onClick={() => setOpen(false)}
             >
               {link.label}

@@ -51,6 +51,8 @@ export function ContactFlow() {
 
   const reduceMotionRef = useRef(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const skipInitialFocusRef = useRef(true);
 
   useEffect(() => {
     reduceMotionRef.current = window.matchMedia(
@@ -60,6 +62,14 @@ export function ContactFlow() {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    if (skipInitialFocusRef.current) {
+      skipInitialFocusRef.current = false;
+      return;
+    }
+    headingRef.current?.focus();
+  }, [step]);
 
   const goToStep = useCallback((next: number) => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -180,11 +190,14 @@ export function ContactFlow() {
 
         <div
           className={`contact-flow__panel${panelVisible ? "" : " contact-flow__panel--leaving"}`}
-          aria-hidden={!panelVisible}
         >
           {step === 1 ? (
             <div>
-              <h2 className="contact-flow__question">
+              <h2
+                ref={headingRef}
+                tabIndex={-1}
+                className="contact-flow__question"
+              >
                 Em que momento está o processo?
               </h2>
               <ul className="contact-options">
@@ -205,7 +218,11 @@ export function ContactFlow() {
 
           {step === 2 ? (
             <div>
-              <h2 className="contact-flow__question">
+              <h2
+                ref={headingRef}
+                tabIndex={-1}
+                className="contact-flow__question"
+              >
                 Como você descreveria o acervo da casa?
               </h2>
               <ul className="contact-options">
@@ -226,7 +243,11 @@ export function ContactFlow() {
 
           {step === 3 ? (
             <form onSubmit={continueFromBairro}>
-              <h2 className="contact-flow__question">
+              <h2
+                ref={headingRef}
+                tabIndex={-1}
+                className="contact-flow__question"
+              >
                 Em que bairro fica o imóvel?
               </h2>
               <div className="contact-fields">
@@ -251,7 +272,11 @@ export function ContactFlow() {
 
           {step === 4 ? (
             <form onSubmit={handleSubmit}>
-              <h2 className="contact-flow__question">
+              <h2
+                ref={headingRef}
+                tabIndex={-1}
+                className="contact-flow__question"
+              >
                 Como posso te chamar, e por qual telefone posso responder?
               </h2>
               <div className="contact-fields">

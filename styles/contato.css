@@ -123,6 +123,11 @@
   margin: 0 0 var(--space-5);
 }
 
+.contact-flow__question:focus {
+  outline: 1px solid var(--cerne-bronze);
+  outline-offset: 4px;
+}
+
 .contact-options {
   display: flex;
   flex-direction: column;
