@@ -37,6 +37,9 @@ yarn-error.log*
 # local audits
 lighthouse-*.json
 
+# playwright test logs
+.playwright-mcp/
+
 # vercel
 .vercel
 
