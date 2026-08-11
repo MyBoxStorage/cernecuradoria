@@ -235,8 +235,10 @@
   font-family: var(--font-display), serif;
   font-variation-settings: "opsz" 24, "wght" 460;
   font-size: 15px;
-  color: var(--cerne-charcoal);
-  opacity: 0.6;
+  /* Antes: --cerne-charcoal + opacity 0.6 (4.05:1, falha AA). Texto é aria-hidden mas
+     continua visível para quem enxerga — contraste precisa passar mesmo assim.
+     --charcoal-65 (= --text-operacao-muted) já existe no sistema e dá ~5.2:1. */
+  color: var(--charcoal-65);
   flex-shrink: 0;
 }
 
